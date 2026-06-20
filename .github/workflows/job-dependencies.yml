@@ -20,7 +20,7 @@ jobs:
           mkdir dist
           echo "Build artifact created at $(date)" > dist/build.txt
       - name: Upload build artifact
-        uses: actions/upload-artifacts@v4
+        uses: actions/upload-artifact@v4
         with:
           name: dist-files
           path: dist
